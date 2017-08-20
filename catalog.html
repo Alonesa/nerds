@@ -87,58 +87,83 @@
         <div class="catalog-sorting">
           <p>Сортировать:</p>
           <ul class="sorting-options">
-            <li class="sorting-current"><a href="#">По цене</a></li>
-            <li class="sorting-current"><a href="#">По типу</a></li>
-            <li class="sorting-current"><a href="#">По названию</a></li>
-            <li class="sorting-current"><a class="btn btn-sort-desc" href="#"></a></li>
-            <li class="sorting-current"><a class="btn btn-sort-asc" href="#"></a></li>
+            <li class="button sorting-current"><a href="#">По цене</a></li>
+            <li class="button sorting-current"><a href="#">По типу</a></li>
+            <li class="button sorting-current"><a href="#">По названию</a></li>
           </ul>
+            <div class="sort-up-down">
+              <a class="button arrow arrow-up" href="#"><span class="visually-hidden">по возрастанию</span></a>
+              <a class="button arrow arrow-down" href="#"><span class="visually-hidden">по убыванию</span></a>
+            </div>
         </div>
         <section class="catalog-list">
           <ul class="catalog-items">
             <li class="item">
-              <h3 class="product"><a href="#">Sedona</a></h3>
-              <p>Информационный сайт для туристов</p>
+              <a class="product-page" href="#">
               <img src="img/content/img-sedona.jpg" width="360" height="576" alt="Sedona">
-              <a class="button" href="#">9 900 Руб.</a>
+              </a>
+              <div class="product-hover">
+                <h3 class="product">Sedona</h3>
+                <span class="product-info">Информационный сайт для туристов</span>
+                <a class="button" href="#">9 900 Руб.</a>
+              </div>
             </li>
             <li class="item">
-              <h3 class="product"><a href="#">Pink</a></h3>
-              <p></p>
+              <a class="product-page" href="#">
               <img src="img/content/img-pink.jpg" width="360" height="576" alt="Pink">
-              <a class="button" href="#"></a>
+              </a>
+              <div class="product-hover">
+                <h3 class="product">Pink</h3>
+                <span class="product-info">Продуктовый лендинг приложения для iOS и Android</span>
+                <a class="button" href="#">9 900 Руб.</a>
+              </div>
             </li>
             <li class="item">
-              <h3 class="product"><a href="#">Borodinski</a></h3>
-              <p></p>
+              <a class="product-page" href="#">
               <img src="img/content/img-barbershop.jpg" width="360" height="576" alt="Borodinski">
-              <a class="button" href="#"></a>
+              </a>
+              <div class="product-hover">
+                <h3 class="product">Borodinski</h3>
+                <span class="product-info">Сайт салона красоты. Для мужчин, да.</span>
+                <a class="button" href="#">9 900 Руб.</a>
+              </div>
             </li>
             <li class="item">
-              <h3 class="product"><a href="#">Mishka</a></h3>
-              <p></p>
+              <a class="product-page" href="#">
               <img src="img/content/img-mishka.jpg" width="360" height="576" alt="Mishka">
-              <a class="button" href="#"></a>
-            </li>
+              </a>
+              <div class="product-hover">
+                <h3 class="product">Mishka</h3>
+                <span class="product-info">Интернет-магазин  вязаных игрушек</span>
+                <a class="button" href="#">9 900 Руб.</a>
+              </div>
             <li class="item">
-              <h3 class="product"><a href="#">A+</a></h3>
-              <p></p>
+              <a class="product-page" href="#">
               <img src="img/content/img-aplus.jpg" width="360" height="576" alt="A+">
-              <a class="button" href="#"></a>
+              </a>
+              <div class="product-hover">
+                <h3 class="product">A+</h3>
+                <span class="product-info">Лендинг курсов повышения квалификации</span>
+                <a class="button" href="#">9 900 Руб.</a>
+              </div>
             </li>
             <li class="item">
-              <h3 class="product"><a href="#">Кваст</a></h3>
-              <p></p>
+              <a class="product-page" href="#">
               <img src="img/content/img-kvast.jpg" width="360" height="576" alt="Кваст">
-              <a class="button" href="#"></a>
+              </a>
+              <div class="product-hover">
+                <h3 class="product">Кваст</h3>
+                <span class="product-info">Промо-сайт производителя крафтового кваса</span>
+                <a class="button" href="#">9 900 Руб.</a>
+              </div>
             </li>
           </ul>
         </section>
         <div class="paginator">
-          <a class="current" href="#1">1</a>
-          <a href="#2">2</a>
-          <a href="#3">3</a>
-          <a class="next" href="#next">Следующая</a>
+          <a class="pagination-item pagination-item-current" href="#1">1</a>
+          <a class="pagination-item" href="#2">2</a>
+          <a class="pagination-item" href="#3">3</a>
+          <a class="pagination-item" class="next" href="#next">Следующая</a>
         </div>
       </section>
       <div class="contacts">
@@ -147,6 +172,9 @@
           <p>191186, Санкт-Петербург,<br />
             ул. Б. Конюшенная, д. 19/8 <br />
             тел. +7 (812) 275-75-75
+          </p>
+          <p>
+            <img src="img/background/map.jpg" width="1440" height="416" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
           </p>
           <a class="button write-us-button" href="#" target="_parent">Напишите нам</a>
         </div>
@@ -166,6 +194,25 @@
           </p>
         </div>
       </footer>
+      <section class="modal modal-contact-us">
+        <h2 class="section-title">Напишите нам</h2>
+        <form class="feedback-form" action="/send.php" method="post">
+          <div class="feedback-form-group">
+            <label for="fullname">Ваше имя:</label>
+            <input type="text" name="fullname" id="fullname">
+          </div>
+          <div class="feedback-form-group">
+            <label for="email">Ваш e-mail:</label>
+            <input type="text" name="email" id="email">
+          </div>
+          <div class="feedback-form-group">
+            <label for="message">Текст письма:</label>
+            <textarea name="message" id="message" rows="5" cols="50"></textarea>
+          </div>
+          <input type="submit" class="btn" value="Отправить">
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
+      </section>
     </main>
   </body>
 </html>

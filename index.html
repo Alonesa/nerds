@@ -20,7 +20,9 @@
           <li><a href="#">Контакты</a></li>
         </ul>
         <ul class="user-buttons">
-          <li class="cart"><a href="cart">Корзина</a></li>
+          <li class="cart">
+            <a href="cart">Корзина</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -30,24 +32,24 @@
         <ul>
           <li class="slide-1">
             <h2 class="slide-info">Долго, дорого,<br> скрупулезно.</h2>
-            <p>Математичесски выверенный дизайн<br>
+            <p>Математичесски выверенный дизайн <br>
               для вашего сайта или мобильного приложения.
             </p>
-            <a href="#">Узнать больше</a>
+            <a class="button slider-button" href="#">Узнать больше</a>
           </li>
           <li class="slide-2">
-            <h2 class="slide-info">Любим математику<br>как никто другой</h2>
+            <h2 class="slide-info">Любим математику<br> как никто другой</h2>
             <p>Никакого креатива, только математичесские формулы<br>
               для расчета идеальных пропориций.
             </p>
-            <a class="button" href="#">Узнать больше</a>
+            <a class="button slider-button" href="#">Узнать больше</a>
           </li>
           <li class="slide-3">
-            <h2 class="slide-info">Только ночь,<br>только хардкор</h2>
-            <p>Работаем днем, как все? Мы против этого.<br>
+            <h2 class="slide-info">Только ночь,<br> только хардкор</h2>
+            <p>Работаем днем, как все? Мы против этого. <br>
               Ближе к полуночи работа только начинается.
             </p>
-            <a class="button"  href="#">Узнать больше</a>
+            <a class="button slide-button" href="#">Узнать больше</a>
           </li>
         </ul>
       </div>
@@ -146,6 +148,9 @@
             ул. Б. Конюшенная, д. 19/8 <br />
             тел. +7 (812) 275-75-75
           </p>
+          <p>
+            <img src="img/background/map.jpg" width="1440" height="416" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+          </p>
           <a class="button write-us-button" href="#" target="_parent">Напишите нам</a>
         </div>
       </div>
@@ -164,6 +169,25 @@
           </p>
         </div>
       </footer>
-    </main>
+      <section class="modal modal-contact-us">
+        <h2 class="section-title">Напишите нам</h2>
+        <form class="feedback-form" action="/send.php" method="post">
+          <div class="feedback-form-group">
+            <label for="fullname">Ваше имя:</label>
+            <input type="text" name="fullname" id="fullname">
+          </div>
+          <div class="feedback-form-group">
+            <label for="email">Ваш e-mail:</label>
+            <input type="text" name="email" id="email">
+          </div>
+          <div class="feedback-form-group">
+            <label for="message">Текст письма:</label>
+            <textarea name="message" id="message" rows="5" cols="50"></textarea>
+          </div>
+          <input type="submit" class="btn" value="Отправить">
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
+        </section>
+      </main>
+    </html>
   </body>
-</html>
