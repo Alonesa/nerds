@@ -1,42 +1,354 @@
 body {
-font-family: Roboto, "PT Sans", Arial;
-font-size: 16px;
-line-height: 24px;
-font-weight: 400;
-color: #283136;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283136;
+  background-color: #ffffff;
 }
+
 .visually-hidden {
-display: none;
+  display: none;
 }
-h2 {
-font-family: Roboto;
-font-size: 45px;
-font-weight: 500;
-line-height: 45px;
-color: black;
+/*Текстовые параметры*/
+
+h2.company-principles,
+h2.modal-title {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+  color: black;
 }
+
 h2.slide-info {
-font-size: 55px;
-line-height: 55px;
+  font-size: 55px;
+  line-height: 55px;
 }
-h3{
-font-family: Roboto;
-font-size: 24px;
-font-weight: 700;
-line-height: 30px;
-color: black;
-text-transform: uppercase;
+
+h3.section-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: black;
+  text-transform: uppercase;
 }
+
 h3.studio-contacts,
 h3.product {
-font-size: 18px;
-line-height: 30px;
+  font-size: 18px;
+  line-height: 30px;
 }
-p>b {
-color: black;
-font-family: Roboto;
-font-size: 16px;
-font-weight: 700;
-line-height: 24px;
-text-transform: uppercase;
+
+p.dev-description {
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
 }
+
+b.offer {
+  font-size: 36px;
+	font-weight: 700;
+	line-height: 36px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+li {
+  list-style: none;
+}
+
+/*Стилизация меню и лого*/
+
+header {
+  background-color: #eeeeee;
+
+}
+.logo:hover{
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.3;
+}
+
+.main-navigation {
+  font-size: 16px;
+	font-weight: 500;
+	line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+
+}
+
+.user-buttons .cart::before {
+
+}
+
+.site-navigation a,
+.user-buttons a {
+  color: #000000;
+}
+.site-navigation a:active,
+.user-buttons a:active {
+	opacity: 0.3;
+	color: #000000;
+}
+
+.site-navigation a:hover,
+.user-buttons a:hover {
+	color: #fb565a;
+}
+
+.site-navigation a.current {
+    border-bottom: 2px solid #fb565a;
+}
+/*Слайдер и кнопки */
+.button {
+  text-transform: uppercase;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  color: #ffffff;
+  border-radius: 3px;
+  padding: 13px 0;
+}
+
+.slider-button {
+  width: 240px;
+	background-color: #fb565a;
+}
+
+.button-red:hover {
+  background-color: #e74246;
+
+}
+.button:active {
+  color: rgb(255, 255, 255, 0.3);
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+}
+.button-red:active {
+  background-color: #d7373b;
+
+}
+/*Стилизация feature*/
+.feature-button {
+  width: 160px;
+}
+
+.feature-button.button-red {
+  background-color: #fb565a;
+}
+.feature-button.button-green {
+  background-color: #00ca74;
+  }
+.button-green:hover {
+  	background-color: #00bc6c;
+}
+
+.button-green:active {
+  background-color: #00aa62;
+}
+
+.feature-button.button-yellow {
+	background-color: #efc84a;
+}
+
+.button-yellow:hover {
+  background-color: #eab534;
+}
+
+.button-yellow:active {
+  background-color: #e5a722;
+}
+
+/*блок партнеров*/
+.partners-logo {
+	opacity: 0.2;
+}
+
+.partners-logo:hover{
+	opacity: 1;
+}
+
+.partners-logo:active{
+	opacity: 0.1;
+}
+/*блок карты модальное окно*/
+.map-image {
+  width: 1440px;
+  height: 416px;
+	background-color: #b5b5b5;
+}
+
+.write-us-button {
+	background-color: #fb565a;
+  width: 219px;
+}
+
+.modal {
+  width: 960px;
+	height: 590px;
+	box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
+}
+
+.modal-title h2 {
+	font-size: 45px;
+	font-weight: 500;
+	line-height: 45px;
+}
+
+.feedback-form input[type="text"] {
+  font: inherit;
+  background-color: #ffffff;
+  height: 16px;
+  border: 2px solid #d7dcde;
+  line-height: 18px;
+  font-size: : 16px;
+  color: #d7dcde;
+}
+.feedback-form textarea {
+  border: 2px solid #d7dcde;
+  color: #d7dcde;
+}
+
+.feedback-form input[type="text"]:hover,
+.feedback-form textarea:hover {
+  border: 2px solid #b4b9bb;
+  color: #b4b9bb;
+}
+
+.feedback-form input[type="text"]:focus,
+.feedback-form textarea:focus {
+  border-color: #000000;
+  color: #000000;
+}
+
+.feedback-form input[type="text"]:invalid,
+.feedback-form textarea:invalid {
+  border-color: #e74246;
+  color: #e74246;
+}
+
+.modal-send {
+  width: 260px;
+	background-color: #fb565a;
+  font: inherit;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 13px 0;
+  border: none;
+}
+
+.shop-title {
+  font: inherit;
+  font-size: 55px;
+	font-weight: 500;
+	line-height: 55px;
+  color: #000000;
+}
+
+.shop-filters fieldset {
+  border: none;
+}
+
+.shop-filters legend {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 30px;
+  text-transform: uppercase;
+}
+
+.filter {
+  margin: 0;
+  padding: 0;
+  padding: 25px;
+  width: 260px;
+  background-color: #ffffff;
+}
+
+.filter-range-wrapper {
+  margin-bottom: 14px;
+  padding: 39px 18px;
+  border-radius: 3px;
+  background-color: #eeeeee;
+}
+
+.filter-range {
+  position: relative;
+}
+
+.filter-range-scale {
+  height: 2px;
+  background-color: #d7dcde;
+}
+
+.filter-range-bar {
+  height: 2px;
+  width: 75%;
+  background-color: #00ca74;
+}
+
+.filter-range-handle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  background-color: #3f4445;
+  cursor: pointer;
+}
+
+.filter-range-handle.min {
+  left: 0%;
+}
+
+.filter-range-handle.max {
+  left: 75%;
+}
+
+.filter-interval {
+  font-size: 0;
+}
+
+.filter-interval label {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  font-size: 16px;
+  line-height: 1.375;
+  text-transform: uppercase;
+}
+
+.filter-interval label:last-child {
+  text-align: right;
+}
+
+.filter-interval input {
+  margin-left: 8px;
+  width: 80px;
+  height: 38px;
+  border-radius: 2px;
+  border: none;
+  font: inherit;
+  color: inherit;
+  text-align: center;
+  background-color: #eeeeee;
+}
+
+.product-hover {
+
+}
+
+
+
+
+
+/*футер*/
