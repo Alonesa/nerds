@@ -10,8 +10,11 @@ body {
 }
 
 .visually-hidden {
-  display: none;
+  visibility: hidden;
+  padding: 0;
+  margin: 0;
 }
+
 /*Текстовые параметры*/
 
 h2.company-principles,
@@ -19,7 +22,7 @@ h2.modal-title {
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
-  color: black;
+  color: #000000;
 }
 
 h2.slide-info {
@@ -31,7 +34,7 @@ h3.section-title {
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
-  color: black;
+  color: #000000;
   text-transform: uppercase;
 }
 
@@ -42,7 +45,7 @@ h3.product {
 }
 
 p.dev-description {
-  color: black;
+  color: #000000;
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
@@ -66,11 +69,11 @@ li {
 
 /*Стилизация меню и лого*/
 
-header {
+.main-header {
   background-color: #eeeeee;
-
 }
-.logo:hover{
+
+.logo:hover {
   opacity: 0.8;
 }
 
@@ -87,18 +90,15 @@ header {
 
 }
 
-.user-buttons .cart::before {
-
-}
-
 .site-navigation a,
 .user-buttons a {
   color: #000000;
 }
+
 .site-navigation a:active,
 .user-buttons a:active {
-	opacity: 0.3;
-	color: #000000;
+  opacity: 0.3;
+  color: #000000;
 }
 
 .site-navigation a:hover,
@@ -107,9 +107,11 @@ header {
 }
 
 .site-navigation a.current {
-    border-bottom: 2px solid #fb565a;
+  border-bottom: 2px solid #fb565a;
 }
+
 /*Слайдер и кнопки */
+
 .button {
   text-transform: uppercase;
   border: none;
@@ -127,17 +129,19 @@ header {
 
 .button-red:hover {
   background-color: #e74246;
-
 }
+
 .button:active {
   color: rgba(255, 255, 255, 0.3);
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
+
 .button-red:active {
   background-color: #d7373b;
-
 }
+
 /*Стилизация feature*/
+
 .feature-button {
   width: 160px;
 }
@@ -145,11 +149,13 @@ header {
 .feature-button.button-red {
   background-color: #fb565a;
 }
+
 .feature-button.button-green {
   background-color: #00ca74;
-  }
+}
+
 .button-green:hover {
-  	background-color: #00bc6c;
+  background-color: #00bc6c;
 }
 
 .button-green:active {
@@ -169,18 +175,21 @@ header {
 }
 
 /*блок партнеров*/
+
 .partners-logo {
 	opacity: 0.2;
 }
 
-.partners-logo:hover{
+.partners-logo:hover {
 	opacity: 1;
 }
 
-.partners-logo:active{
+.partners-logo:active {
 	opacity: 0.1;
 }
+
 /*блок карты модальное окно*/
+
 .map-image {
   width: 1440px;
   height: 416px;
@@ -213,6 +222,7 @@ header {
   font-size: : 16px;
   color: #d7dcde;
 }
+
 .feedback-form textarea {
   border: 2px solid #d7dcde;
   color: #d7dcde;
@@ -245,7 +255,9 @@ header {
   padding: 13px 0;
   border: none;
 }
+
 /*Каталог*/
+
 .shop-title {
   font: inherit;
   font-size: 55px;
@@ -419,6 +431,7 @@ header {
 .pagination-item {
 	width: 50px;
 }
+
 .pagination-item-current {
 	width: 44px;
   padding: 10px 0;
