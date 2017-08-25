@@ -130,7 +130,7 @@ header {
 
 }
 .button:active {
-  color: rgb(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 .button-red:active {
@@ -245,7 +245,7 @@ header {
   padding: 13px 0;
   border: none;
 }
-
+/*Каталог*/
 .shop-title {
   font: inherit;
   font-size: 55px;
@@ -343,12 +343,89 @@ header {
   background-color: #eeeeee;
 }
 
-.product-hover {
-
+.filter-parametr + label {
+	color: #283136;
 }
 
+.filter-parametr:hover + label,
+.filter-parametr:focus + label {
+	color: #000000;
+}
 
+.filter-parametr:disabled + label {
+  color: #283136;
+  opacity: 0.3;
+}
 
+.button-gray {
+  font: inherit;
+  text-transform: uppercase;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  color: #000000;
+  background-color: #eeeeee;
+  border-radius: 3px;
+  padding: 13px 0;
+}
 
+.button-gray:hover {
+  background-color: #dfdfdf;
+}
 
-/*футер*/
+.button-gray:active {
+  background-color: #d5d5d5;
+	box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.button-gray-show {
+  width: 260px;
+}
+
+.sorting-field {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.sorting-options a,
+.sort-up-down a {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+	text-transform: uppercase;
+}
+
+.sorting-options a:hover,
+.sort-up-down a:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.sorting-options a:active,
+.sort-up-down a:active,
+.set a {
+	color: #000000;
+}
+
+.button-buy {
+	background-color: #fb565a;
+  width: 200px;
+}
+
+.pagination-item {
+	width: 50px;
+}
+.pagination-item-current {
+	width: 44px;
+  padding: 10px 0;
+  border: 3px solid rgb(219, 219, 219);
+  background-color: #ffffff;
+}
+
+.next {
+	width: 260px;
+}
