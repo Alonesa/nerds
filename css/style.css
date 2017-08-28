@@ -1,3 +1,4 @@
+
 body {
   padding: 0;
   margin: 0;
@@ -10,9 +11,14 @@ body {
 }
 
 .visually-hidden {
-  visibility: hidden;
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
   padding: 0;
-  margin: 0;
+  border: 0;
 }
 
 /*Текстовые параметры*/
@@ -28,6 +34,8 @@ h2.modal-title {
 h2.slide-info {
   font-size: 55px;
   line-height: 55px;
+  color: #000000;
+
 }
 
 h3.section-title {
@@ -42,6 +50,9 @@ h3.studio-contacts,
 h3.product {
   font-size: 18px;
   line-height: 30px;
+  font-weight: 700;
+	text-transform: uppercase;
+  color: #000000;
 }
 
 p.dev-description {
@@ -56,6 +67,7 @@ b.offer {
   font-size: 36px;
 	font-weight: 700;
 	line-height: 36px;
+  color: #000000;
 }
 
 a {
@@ -69,8 +81,63 @@ li {
 
 /*Стилизация меню и лого*/
 
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 1160px;
+}
+
 .main-header {
   background-color: #eeeeee;
+}
+
+.main-navigation {
+  font-size: 16px;
+	font-weight: 500;
+	line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-navigation-wrapper {
+  width: 865px;
+  height: 121px;
+  padding-left: 180px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.site-navigation {
+  width: 482px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+
+}
+
+.user-buttons {
+  width: 100px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.main-header-logo {
+  width: 160px;
+  height: 107px;
+  display: flex;
+  align-items: flex-end;
 }
 
 .logo:hover {
@@ -81,13 +148,8 @@ li {
   opacity: 0.3;
 }
 
-.main-navigation {
-  font-size: 16px;
-	font-weight: 500;
-	line-height: 30px;
-  color: #000000;
-  text-transform: uppercase;
-
+.site-navigation {
+  list-style: none;
 }
 
 .site-navigation a,
@@ -108,9 +170,29 @@ li {
 
 .site-navigation a.current {
   border-bottom: 2px solid #fb565a;
+  padding-bottom: 8px;
 }
 
 /*Слайдер и кнопки */
+
+.slider-container {
+  padding: 0;
+  margin: 0;
+  min-height: 424px;
+  margin-bottom: 80px;
+}
+
+.slider-container ul {
+  padding: 0;
+}
+
+.promo-sliders ul {
+  margin: 0;
+}
+
+.slider-description {
+  float: left;
+}
 
 .button {
   text-transform: uppercase;
@@ -141,6 +223,28 @@ li {
 }
 
 /*Стилизация feature*/
+
+.features {
+  margin: 80px 0;
+}
+
+.features ul {
+  padding: 0;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  min-height: 348px;
+}
+
+.feature-item {
+  width: 300px;
+  min-height: 348px;
+}
 
 .feature-button {
   width: 160px;
@@ -174,36 +278,148 @@ li {
   background-color: #e5a722;
 }
 
-/*блок партнеров*/
+.company-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  height: 400px;
 
+  /*Временно*/
+  margin-bottom: 85px;
+}
+
+th {
+	font-size: 45px;
+	font-weight: 700;
+	line-height: 45px;
+}
+
+sup {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 10px;
+}
+/*блок партнеров*/
+.partners {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 36px 0;
+
+  min-height: 80px;
+}
 .partners-logo {
-	opacity: 0.2;
+  opacity: 0.2;
 }
 
 .partners-logo:hover {
-	opacity: 1;
+  opacity: 1;
 }
 
 .partners-logo:active {
-	opacity: 0.1;
+  opacity: 0.1;
 }
 
 /*блок карты модальное окно*/
 
-.map-image {
-  width: 1440px;
-  height: 416px;
-	background-color: #b5b5b5;
+.contacts {
+  min-height: 416px;
+  margin-top: 79px;
+  background-image: url("../img/background/map.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
+
+.contacts-wraper {
+  min-height: 416px;
+  width: 850px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-info {
+  height: 308px;
+  width: 269px;
+  background-color: #ffffff;
+  padding: 0;
+  padding-left: 50px;
+}
+
+
 
 .write-us-button {
 	background-color: #fb565a;
   width: 219px;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.map-marker {
+  min-height: 190px;
+  padding-bottom: 40px;
+}
+
+.footer-socials {
+  min-height: 218px;
+  width: 950px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socials ul {
+  padding: 0;
+  margin: 0;
+}
+.social-buttons {
+  width: 260px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.social-button {
+  min-width: 78px;
+	min-height: 78px;
+  border-radius: 50%;
+	background-color: #e1e1e1;
+}
+
+.button-vk {
+  background-image: url(../img/decorative/vk-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.button-fb {
+  background-image: url(../img/decorative/fb-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.button-insta {
+  background-image: url(../img/decorative/insta-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.deal {
+  width: 550px;
+  outline: 3px solid green;
 }
 
 .modal {
-  width: 960px;
-	height: 590px;
+  width: 760px;
+	height: 490px;
+  padding: 20px 100px 80px;
+  margin-bottom: 100px;
 	box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
 }
 
@@ -261,9 +477,13 @@ li {
 .shop-title {
   font: inherit;
   font-size: 55px;
-	font-weight: 500;
+	font-weight: 600;
 	line-height: 55px;
   color: #000000;
+  min-height: 112px;
+  text-align: center;
+  margin: 0;
+  padding: 70px 0 52px 0;
 }
 
 .shop-filters fieldset {
@@ -423,17 +643,40 @@ li {
 	color: #000000;
 }
 
+.product-description {
+  position: relative;
+}
+
+.product-hover {
+  position: absolute;
+  display: none;
+  background-color: #eeeeee;
+  width: 360px;
+  height: 215px;
+  bottom: 7px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0 auto;
+}
+
+
+
+.product-description:hover > .product-hover {
+  display: block;
+}
+
 .button-buy {
 	background-color: #fb565a;
   width: 200px;
+  margin-top: 25px;
 }
 
 .pagination-item {
-	width: 50px;
+  width: 50px;
 }
 
 .pagination-item-current {
-	width: 44px;
+  width: 44px;
   padding: 10px 0;
   border: 3px solid rgb(219, 219, 219);
   background-color: #ffffff;
