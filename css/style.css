@@ -60,6 +60,7 @@ p.dev-description {
   font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
+  margin: 30px 0 40px 21px;
 }
 
 a {
@@ -185,7 +186,6 @@ input[type="radio"].visually-hidden {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-
 }
 
 .user-buttons {
@@ -198,7 +198,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-
 }
 
 .user-buttons .cart {
@@ -277,6 +276,8 @@ input[type="radio"].visually-hidden {
 
 .features ul {
   padding: 0;
+  margin: 0;
+  margin-right: 60px;
 }
 
 .features-list {
@@ -290,7 +291,13 @@ input[type="radio"].visually-hidden {
 
 .feature-item {
   width: 300px;
+  height: 348px;
+}
 
+.section-title {
+  padding: 0;
+  margin: 0;
+  margin-top: 18px;
 }
 
 .feature-button {
@@ -330,9 +337,19 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  padding-top: 30px;
+  padding-top: 31px;
   height: 400px;
   margin-bottom: 85px;
+}
+
+.company-info-left {
+  width: 652px;
+  height: 400px;
+}
+
+.company-info-right {
+  width: 360px;
+  height: 400px;
 }
 
 th {
@@ -353,10 +370,11 @@ sup {
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: space-around;
-  padding: 36px 0;
+  justify-content: space-between;
+  padding: 36px 41px 33px 31px;
   min-height: 80px;
 }
+
 
 .partners-logo {
   opacity: 0.2;
@@ -374,7 +392,7 @@ sup {
 
 .contacts {
   min-height: 416px;
-  margin-top: 76px;
+  margin-top: 79px;
   background-image: url("../img/background/map.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -401,13 +419,17 @@ sup {
   padding-left: 50px;
 }
 
-.paragraph-promo {
-  margin-top:22px;
-  margin-bottom: 20px;
+.paragraph-promo-features {
+  margin-top:16px;
+  margin-bottom: 32px;
 }
 
 .contact-info h3 {
   margin-top: 49px;
+}
+
+.contacts-block {
+  margin: 22px 0 19px;
 }
 
 .write-us-button {
