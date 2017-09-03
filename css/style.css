@@ -1,6 +1,7 @@
 body {
   padding: 0;
   margin: 0;
+  min-width: 1200px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -45,13 +46,25 @@ h3.section-title {
   text-transform: uppercase;
 }
 
-h3.studio-contacts,
-h3.product {
+h3.studio-contacts {
+  font: inherit;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
 	text-transform: uppercase;
   color: #000000;
+}
+
+h3.product {
+  font: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+	text-transform: uppercase;
+  color: #000000;
+  padding: 0;
+  margin: 0;
+  margin: 28px 0 10px;
 }
 
 p.dev-description {
@@ -60,7 +73,6 @@ p.dev-description {
   font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
-  margin: 30px 0 40px 21px;
 }
 
 a {
@@ -102,13 +114,12 @@ input[type="radio"].visually-hidden {
 
 .main-header {
   background-color: #eeeeee;
-  height: 545px;
+  min-height: 540px;
 }
 
 .main-header-logo {
   width: 200px;
   height: 65px;
-  padding-top: 48px;
 }
 
 .logo:hover {
@@ -117,15 +128,6 @@ input[type="radio"].visually-hidden {
 
 .logo:active {
   opacity: 0.3;
-}
-
-.site-navigation {
-  list-style: none;
-}
-
-.site-navigation a,
-.user-buttons a {
-  color: #000000;
 }
 
 .site-navigation a:active,
@@ -141,30 +143,29 @@ input[type="radio"].visually-hidden {
 
 .site-navigation a.current {
   border-bottom: 2px solid #fb565a;
-  padding-bottom: 9px;
+  padding-bottom: 3px;
 }
 
 .main-navigation {
   font-size: 16px;
 	font-weight: 500;
 	line-height: 30px;
+  padding-top: 49px;
   color: #000000;
   text-transform: uppercase;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .main-navigation-wrapper {
   width: 100%;
-  min-height: 112px;
+  background-color: #eeeeee;
 }
 
 .main-navigation-wrapper .container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  flex-wrap: wrap;
 }
 
 .site-navigation,
@@ -175,29 +176,34 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation {
-  width: 440px;
-  height: 39px;
-  margin: 0;
-  padding: 0;
-  padding-top: 75px;
+  width: 488px;
   margin-right: 70px;
   list-style: none;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+}
+
+.site-navigation a {
+  color: #000000;
+  display: block;
+  vertical-align: middle;
+  padding: 26px 0;
+  margin: 0 23.4px;
+}
+
+.user-buttons a {
+  color: #000000;
+  display: block;
+  vertical-align: middle;
+  padding-top: 26px;
 }
 
 .user-buttons {
   width: 125px;
-  height: 39px;
-  padding: 0;
-  margin: 0;
-  padding-top: 75px;
   list-style: none;
   display: flex;
-  flex-direction: row;
   justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 .user-buttons .cart {
@@ -209,7 +215,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
 	left: 0;
-  top: 1px;
+  top: 33px;
 	width: 15px;
 	height: 15px;
   background-image: url("../img/decorative/cart-icon.svg");
@@ -224,16 +230,19 @@ input[type="radio"].visually-hidden {
 .slider-container {
   padding: 0;
   margin: 0;
-  min-height: 424px;
+  min-height: 400px;
   margin-bottom: 80px;
 }
 
 .slider-container ul {
   padding: 0;
+  margin: 0;
 }
 
 .promo-sliders ul {
+  padding: 0;
   margin: 0;
+  height: 414px;
 }
 
 .slider-description {
@@ -271,7 +280,7 @@ input[type="radio"].visually-hidden {
 /*Стилизация feature*/
 
 .features {
-  margin: 80px 0;
+  margin: 20px 0;
 }
 
 .features ul {
@@ -283,15 +292,22 @@ input[type="radio"].visually-hidden {
 .features-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
-  height: 348px;
+  min-height: 348px;
 }
 
 .feature-item {
   width: 300px;
   height: 348px;
+  margin-bottom: 60px;
+}
+
+.feature-item img {
+  width: 300px;
+  height: 146px;
 }
 
 .section-title {
@@ -335,33 +351,90 @@ input[type="radio"].visually-hidden {
 .company-info {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   padding-top: 31px;
-  height: 400px;
-  margin-bottom: 85px;
+  min-height: 400px;
+  margin-bottom: 42px;
 }
 
 .company-info-left {
   width: 652px;
-  height: 400px;
+  min-height: 400px;
+}
+
+.company-info-left h2 {
+  margin-top: 34px;
+  margin-bottom: 33px;
+}
+
+.dev-description {
+  padding: 0;
+  margin: 0;
+  margin: 29px 0 41px 17px;
+}
+
+.company-info-left ul {
+  padding: 0;
+  margin: 0;
+  margin-top: 16px;
+  padding-left: 36px;
+}
+
+.dev-services {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
 }
 
 .company-info-right {
   width: 360px;
-  height: 400px;
+  min-height: 400px;
+}
+
+.company-advantage {
+  font: inherit;
+  font-size: 16px;
+	font-weight: 400;
+	line-height: 18px;
+  padding: 0;
+  margin: 0;
+  width: 360px;
+  vertical-align: bottom;
+  text-align: left;
+  border-collapse: collapse;
 }
 
 th {
 	font-size: 45px;
 	font-weight: 700;
 	line-height: 45px;
+  padding: 0;
+  margin: 0;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  padding-left: 10px;
+  padding-right: 8px;
+}
+
+td {
+  padding-top: 19px;
 }
 
 sup {
   font-size: 28px;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 10px;
+}
+
+hr {
+  color: #f4f4f4;
+  border: none;
+  background-color: #f4f4f4;
+  height: 2px;
 }
 
 /*блок партнеров*/
@@ -370,11 +443,59 @@ sup {
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: space-between;
-  padding: 36px 41px 33px 31px;
-  min-height: 80px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 33px;
+  padding-bottom: 29px;
+  min-height: 93px;
+  margin-left: 31px;
 }
 
+.partners li {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.partners-link::after {
+  content: "";
+  position: absolute;
+  border: 1px solid #f4f4f4;
+  height: 50px;
+  right: 0;
+  bottom: 25px;
+  padding: auto 0;
+}
+
+.html-academy-logo {
+  padding: 0;
+  margin: 0;
+  padding-top: 15px;
+  padding-right: 51px;
+}
+
+.borodinski-logo {
+  padding: 0;
+  margin: 0;
+  padding-top: 4px;
+  padding-left: 45px;
+  padding-right: 46px;
+}
+
+.pink-logo {
+  padding: 0;
+  margin: 0;
+  padding-top: 5px;
+  padding-right: 58px;
+  padding-left: 57px;
+}
+
+.mishka-logo {
+  padding: 0;
+  margin: 0;
+  padding-top: 11px;
+  padding-left: 63px;
+}
 
 .partners-logo {
   opacity: 0.2;
@@ -391,8 +512,10 @@ sup {
 /*блок карты модальное окно*/
 
 .contacts {
-  min-height: 416px;
-  margin-top: 79px;
+  height: 416px;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 80px;
   background-image: url("../img/background/map.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -400,14 +523,13 @@ sup {
 
 .contacts-wraper {
   min-height: 416px;
-  width: 850px;
+  width: 851px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .contact-info {
-  height: 307px;
+  height: 308px;
   width: 269px;
   font: inherit;
 	font-size: 16px;
@@ -417,6 +539,7 @@ sup {
   background-color: #ffffff;
   padding: 0;
   padding-left: 50px;
+  margin-top: 54px;
 }
 
 .paragraph-promo-features {
@@ -429,7 +552,7 @@ sup {
 }
 
 .contacts-block {
-  margin: 22px 0 19px;
+  margin: 23px 0 18px;
 }
 
 .write-us-button {
@@ -443,7 +566,8 @@ sup {
 
 .map-marker {
   min-height: 190px;
-  padding-bottom: 40px;
+  padding-bottom: 41px;
+  margin-top: 89px;
 }
 
 .footer-socials {
@@ -458,14 +582,14 @@ sup {
 .socials ul {
   padding: 0;
   margin: 0;
+  margin-top: 70px;
 }
 
 .social-buttons {
-  width: 260px;
-  min-height: 216px;
+  min-width: 260px;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -495,9 +619,8 @@ sup {
 }
 
 .deal {
-  width: 550px;
-  padding-top: 74px;
-  margin-right: 210px;
+  padding-top: 75px;
+  margin-right: 215px;
 }
 
 .offer {
@@ -505,44 +628,85 @@ sup {
 	font-weight: 700;
 	line-height: 36px;
   color: #000000;
+  width: 545px;
+  height: 35px;
+  word-spacing: 1px;
 }
 
 .discount {
   padding: 0;
   margin: 0;
-  padding-top: 10px;
+  padding-top: 9px;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 22px;
   color: #444444;
 }
 
+
+/*Модальное окно*/
 .modal {
   width: 760px;
-	height: 490px;
-  padding: 20px 100px 80px;
+	height: 457px;
+  padding: 66px 100px;
   margin-bottom: 100px;
 	box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
 }
 
-.modal-title h2 {
+.modal h2 {
   font: inherit;
 	font-size: 45px;
 	font-weight: 500;
 	line-height: 45px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 3px;
+}
+
+.feedback-form {
+  width: 760px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.feedback-form-group {
+  padding: 0;
+  margin: 0;
+  width: 360px;
+}
+
+.feedback-form-group label {
+  display: block;
+  margin-bottom: 9px;
+  padding-top: 38px;
+  font: inherit;
+  font-size: 16px;
+	font-weight: 700;
+	line-height: 18px;
+}
+
+.message-form label {
+  padding-top: 34px;
 }
 
 .feedback-form input[type="text"] {
   font: inherit;
   background-color: #ffffff;
-  height: 16px;
+  height: 44px;
+  width: 343px;
   border: 2px solid #d7dcde;
+  padding-left: 13px;
+  border-radius: 3px;
   line-height: 18px;
   font-size: : 16px;
   color: #d7dcde;
 }
 
 .feedback-form textarea {
+  width: 730px;
+  height: 88px;
+  padding: 13px;
   border: 2px solid #d7dcde;
   color: #d7dcde;
 }
@@ -567,6 +731,9 @@ sup {
 
 .modal-send {
   width: 260px;
+  height: 50px;
+  margin-right: 200px;
+  margin-top: 40px;
 	background-color: #fb565a;
   font: inherit;
   text-transform: uppercase;
@@ -575,11 +742,15 @@ sup {
   border: none;
 }
 
+.modal-close {
+  height: 30px;
+}
+
 /*Каталог*/
 
 .inner-page .main-header {
   margin-bottom: 60px;
-  height: 355px;
+  min-height: 355px;
   background-color: #eeeeee;
   margin-bottom: 50px;
 }
@@ -587,13 +758,12 @@ sup {
 .shop-title {
   font: inherit;
   font-size: 55px;
-	font-weight: 600;
+	font-weight: 500;
 	line-height: 55px;
   color: #000000;
-  min-height: 112px;
   text-align: center;
-  margin: 0;
-  padding: 77px 0 52px 0;
+  margin: 0 auto;
+  padding-top: 61px;
 }
 
 .catalog-columns {
@@ -685,6 +855,7 @@ fieldset {
   border: none;
   padding: 0;
   margin: 0;
+  margin-top: 5px;
 }
 
 .shop-filters legend {
@@ -697,15 +868,18 @@ fieldset {
 }
 
 .filter {
-  margin: 0;
   padding: 0;
+  margin: 0;
   padding: 25px;
+  padding-left: 0;
+  margin-bottom: 25px;
   width: 260px;
   background-color: #ffffff;
 }
 
 .filter-range-wrapper {
-  margin-bottom: 14px;
+  margin-bottom: 12px;
+  margin-top: 23px;
   padding: 39px 18px;
   border-radius: 3px;
   background-color: #eeeeee;
@@ -722,7 +896,7 @@ fieldset {
 
 .filter-range-bar {
   height: 2px;
-  width: 75%;
+  width: 64%;
   background-color: #00ca74;
 }
 
@@ -742,7 +916,7 @@ fieldset {
 }
 
 .filter-range-handle.max {
-  left: 75%;
+  left: 63%;
 }
 
 .filter-interval {
@@ -794,10 +968,13 @@ fieldset {
   border: none;
   text-align: center;
   display: inline-block;
+  font-size: 16px;
+	font-weight: 500;
+	line-height: 20px;
   color: #000000;
   background-color: #eeeeee;
   border-radius: 3px;
-  padding: 13px 0;
+  padding: 15px 0;
 }
 
 .button-gray:hover {
@@ -847,11 +1024,11 @@ fieldset {
   padding-top: 40px;
 }
 
-.item::before {
+.product-description::before {
   content: "";
   position: absolute;
 	left: 0;
-  top: 0;
+  top: -40px;
 	width: 360px;
 	height: 40px;
   background-image: url("../img/decorative/browser.svg");
@@ -861,8 +1038,17 @@ fieldset {
   opacity: 0.12;
 }
 
-.item:hover {
+.product-description:hover::before {
   opacity: 1;
+}
+
+.product-info {
+  width: 180px;
+	font: inherit;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 14px;
+  color: #666666;
 }
 
 .product-description {
@@ -874,7 +1060,7 @@ fieldset {
   display: none;
   background-color: #eeeeee;
   width: 360px;
-  height: 215px;
+  height: 231px;
   bottom: 7px;
   text-align: center;
   vertical-align: middle;
@@ -888,13 +1074,13 @@ fieldset {
 .button-buy {
 	background-color: #fb565a;
   width: 200px;
-  margin-top: 25px;
+  margin-top: 22px;
 }
 
 .paginator {
   padding: 0;
   margin: 0;
-  margin-top: 26px;
+  margin-top: 27px;
 }
 
 .pagination-item {
@@ -904,7 +1090,8 @@ fieldset {
 
 .pagination-item-current {
   width: 44px;
-  padding: 10px 0;
+  padding: 12px 0;
+  margin-right: 8px;
   border: 3px solid rgb(219, 219, 219);
   background-color: #ffffff;
 }
@@ -915,6 +1102,6 @@ fieldset {
 
 .inner-page .contacts {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   margin-top: 37px;
 }

@@ -25,9 +25,7 @@
               <li><a  href="#">Контакты</a></li>
             </ul>
             <ul class="user-buttons">
-              <li>
-                <a class="cart" href="cart">Корзинa</a>
-              </li>
+              <li><a class="cart" href="cart">Корзинa</a></li>
             </ul>
           </div>
         </div>
@@ -126,7 +124,7 @@
           <h2 class="company-principles">Мы &mdash; маленькая, но гордая<br>
             дизайн-студия из Краснодара.
           </h2>
-          <p class="paragraph-promo">Исповедуем принципы минимализма и чистоты. Ставим математичесский расчет<br>
+          <p class="paragraph-promo">Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
             превыше креатива. Работаем не покладая рук, как роботы.
           </p>
           <p class="dev-description">Выполняем заказы на разработку:</p>
@@ -158,24 +156,24 @@
       <hr>
       <div>
         <ul class="partners">
-          <li>
+          <li class="our-partners">
             <a class="partners-link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" title="HTML-Academy" >
-            <img class="partners-logo"  src="img/content/logo-1.png" width="199" height="68" alt="HTML-Academy"/>
+            <img class="partners-logo html-academy-logo"  src="img/content/logo-1.png" width="199" height="68" alt="HTML-Academy"/>
             </a>
           </li>
-          <li>
+          <li class="our-partners">
             <a class="partners-link" href="#" target="_blank" title="Borodinski">
-            <img class="partners-logo"  src="img/content/logo-2.png"  width="209" height="87" alt="Borodinski"/>
+            <img class="partners-logo borodinski-logo"  src="img/content/logo-2.png"  width="209" height="87" alt="Borodinski"/>
             </a>
           </li>
-          <li>
+          <li class="our-partners">
             <a class="partners-link" href="#"  target="_blank" title="Pink">
-            <img class="partners-logo"  src="img/content/logo-3.png" width="185" height="52" alt="Pink"/>
+            <img class="partners-logo pink-logo"  src="img/content/logo-3.png" width="185" height="52" alt="Pink"/>
             </a>
           </li>
-          <li>
-            <a class="partners-link" href="#" target="_blank" title="Mishka">
-            <img class="partners-logo"  src="img/content/logo-4.png"  width="173" height="84" alt="Mishka"/>
+          <li class="our-partners">
+            <a class="partners-link-3" href="#" target="_blank" title="Mishka">
+            <img class="partners-logo mishka-logo"  src="img/content/logo-4.png"  width="173" height="84" alt="Mishka"/>
             </a>
           </li>
         </ul>
@@ -218,7 +216,7 @@
         </div>
       </div>
     </footer>
-    <section class=" container modal modal-contact-us">
+    <section class="container modal modal-contact-us">
       <h2 class="modal-title">Напишите нам</h2>
       <form class="feedback-form" action="/send.php" method="post">
         <div class="feedback-form-group">
@@ -229,13 +227,13 @@
           <label for="email">Ваш e-mail:</label>
           <input type="text" name="email" id="email" placeholder="Для отправки ответа">
         </div>
-        <div class="feedback-form-group">
+        <div class="feedback-form-group message-form">
           <label for="message">Текст письма:</label>
           <textarea name="message" id="message" rows="5" cols="50" placeholder="В свободной форме"></textarea>
         </div>
         <input type="submit" class="btn button-red modal-send" value="Отправить">
+        <button class="modal-close" type="button">Закрыть</button>
       </form>
-      <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
 </html>
