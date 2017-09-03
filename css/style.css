@@ -570,6 +570,135 @@ hr {
   margin-top: 89px;
 }
 
+/*Модальное окно*/
+.modal {
+  width: 760px;
+	height: 456px;
+  padding: 66px 100px;
+	box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
+  background-color: #ffffff;
+}
+
+.modal-contact-us {
+  top: 120px;
+  left: 50%;
+  margin-left: -480px;
+  width: 760px;
+  padding: 67px 100px;
+  position: fixed;
+}
+
+.modal h2 {
+  font: inherit;
+	font-size: 45px;
+	font-weight: 500;
+	line-height: 45px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 3px;
+}
+
+.feedback-form {
+  width: 760px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 38px;
+}
+
+.feedback-form-group {
+  padding: 0;
+  margin: 0;
+  width: 360px;
+}
+
+.feedback-form-group label {
+  font: inherit;
+  font-size: 16px;
+	font-weight: 700;
+	line-height: 18px;
+}
+
+.feedback-form input[type="text"] {
+  font: inherit;
+  background-color: #ffffff;
+  height: 44px;
+  width: 343px;
+  border: 2px solid #d7dcde;
+  padding-left: 13px;
+  border-radius: 3px;
+  line-height: 18px;
+  font-size: : 16px;
+  color: #d7dcde;
+  margin-top: 6px;
+}
+
+.feedback-form textarea {
+  width: 730px;
+  height: 88px;
+  padding: 13px;
+  border: 2px solid #d7dcde;
+  color: #d7dcde;
+  margin-top: 6px;
+}
+
+.message-form {
+  margin-top: 31px;
+}
+
+.feedback-form input[type="text"]:hover,
+.feedback-form textarea:hover {
+  border: 2px solid #b4b9bb;
+  color: #b4b9bb;
+}
+
+.feedback-form input[type="text"]:focus,
+.feedback-form textarea:focus {
+  border-color: #000000;
+  color: #000000;
+}
+
+.feedback-form input[type="text"]:invalid,
+.feedback-form textarea:invalid {
+  border-color: #e74246;
+  color: #e74246;
+}
+
+.modal-send {
+  width: 260px;
+  height: 50px;
+  margin-right: 200px;
+  margin-top: 40px;
+	background-color: #fb565a;
+  font: inherit;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 13px 0;
+  border: none;
+}
+
+.modal-close {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 66px;
+  right: 99px;
+  border: none;
+  background-color: #ffffff;
+}
+
+.modal-close::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/decorative/close-cross.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 24px;
+  height: 24px;
+}
+
+/*Футер*/
+
 .footer-socials {
   min-height: 218px;
   width: 1160px;
@@ -641,109 +770,6 @@ hr {
 	font-weight: 400;
 	line-height: 22px;
   color: #444444;
-}
-
-
-/*Модальное окно*/
-.modal {
-  width: 760px;
-	height: 457px;
-  padding: 66px 100px;
-  margin-bottom: 100px;
-	box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
-}
-
-.modal h2 {
-  font: inherit;
-	font-size: 45px;
-	font-weight: 500;
-	line-height: 45px;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 3px;
-}
-
-.feedback-form {
-  width: 760px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.feedback-form-group {
-  padding: 0;
-  margin: 0;
-  width: 360px;
-}
-
-.feedback-form-group label {
-  display: block;
-  margin-bottom: 9px;
-  padding-top: 38px;
-  font: inherit;
-  font-size: 16px;
-	font-weight: 700;
-	line-height: 18px;
-}
-
-.message-form label {
-  padding-top: 34px;
-}
-
-.feedback-form input[type="text"] {
-  font: inherit;
-  background-color: #ffffff;
-  height: 44px;
-  width: 343px;
-  border: 2px solid #d7dcde;
-  padding-left: 13px;
-  border-radius: 3px;
-  line-height: 18px;
-  font-size: : 16px;
-  color: #d7dcde;
-}
-
-.feedback-form textarea {
-  width: 730px;
-  height: 88px;
-  padding: 13px;
-  border: 2px solid #d7dcde;
-  color: #d7dcde;
-}
-
-.feedback-form input[type="text"]:hover,
-.feedback-form textarea:hover {
-  border: 2px solid #b4b9bb;
-  color: #b4b9bb;
-}
-
-.feedback-form input[type="text"]:focus,
-.feedback-form textarea:focus {
-  border-color: #000000;
-  color: #000000;
-}
-
-.feedback-form input[type="text"]:invalid,
-.feedback-form textarea:invalid {
-  border-color: #e74246;
-  color: #e74246;
-}
-
-.modal-send {
-  width: 260px;
-  height: 50px;
-  margin-right: 200px;
-  margin-top: 40px;
-	background-color: #fb565a;
-  font: inherit;
-  text-transform: uppercase;
-  color: #ffffff;
-  padding: 13px 0;
-  border: none;
-}
-
-.modal-close {
-  height: 30px;
 }
 
 /*Каталог*/
