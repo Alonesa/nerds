@@ -121,7 +121,7 @@
       <hr>
       <section class="company-info">
         <div class="company-info-left">
-          <h2 class="company-principles">Мы &mdash; маленькая, но гордая<br>
+          <h2 class="company-principles">Мы &mdash; маленькая, но гордая
             дизайн-студия из Краснодара.
           </h2>
           <p class="paragraph-promo">Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
@@ -130,7 +130,7 @@
           <p class="dev-description">Выполняем заказы на разработку:</p>
           <ul>
             <li class="dev-services">Веб-сайтов любой сложности</li>
-            <li class="dev-services">Мобильных приложений для OC и Android</li>
+            <li class="dev-services">Мобильных приложений для iOC и Android</li>
             <li class="dev-services">Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </div>
@@ -138,7 +138,7 @@
           <img class="company-info-image" src="img/content/nerds-illustration.jpg" alt="Студия Нердс лого-2" width="360" height="208">
           <br>
           <h3 class="visually-hidden">Наши преимущества</h3>
-          <p class="dev-description">С 2004 года Любим точность во всем:</p>
+          <p class="dev-description description-right">С 2004 года Любим точность во всем:</p>
           <table class="company-advantage">
             <tr>
               <th>146<sup>%</sup></th>
@@ -192,26 +192,26 @@
             тел. +7 (812) 275-75-75
             </span>
             <a class="button write-us-button button-red" href="#" target="_parent">Напишите нам</a>
+            <section class="container modal modal-contact-us">
+              <h2 class="modal-title">Напишите нам</h2>
+              <form class="feedback-form" action="/send.php" method="post">
+                <div class="feedback-form-group">
+                  <label for="fullname">Ваше имя:</label>
+                  <input type="text" name="fullname" id="fullname" placeholder="Представьтесь, пожалуйста">
+                </div>
+                <div class="feedback-form-group">
+                  <label for="email">Ваш e-mail:</label>
+                  <input type="text" name="email" id="email" placeholder="Для отправки ответа">
+                </div>
+                <div class="feedback-form-group message-form">
+                  <label for="message">Текст письма:</label>
+                  <textarea name="message" id="message" rows="5" cols="50" placeholder="В свободной форме"></textarea>
+                </div>
+                <input type="submit" class="btn button-red modal-send" value="Отправить">
+                <button class="modal-close" type="button"><a href="#"><span class="visually-hidden">Закрыть</span></a></button>
+              </form>
+            </section>
           </div>
-          <section class="container modal modal-contact-us">
-            <h2 class="modal-title">Напишите нам</h2>
-            <form class="feedback-form" action="/send.php" method="post">
-              <div class="feedback-form-group">
-                <label for="fullname">Ваше имя:</label>
-                <input type="text" name="fullname" id="fullname" placeholder="Представьтесь, пожалуйста">
-              </div>
-              <div class="feedback-form-group">
-                <label for="email">Ваш e-mail:</label>
-                <input type="text" name="email" id="email" placeholder="Для отправки ответа">
-              </div>
-              <div class="feedback-form-group message-form">
-                <label for="message">Текст письма:</label>
-                <textarea name="message" id="message" rows="5" cols="50" placeholder="В свободной форме"></textarea>
-              </div>
-              <input type="submit" class="btn button-red modal-send" value="Отправить">
-              <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
-            </form>
-          </section>
           <div class="map-marker">
             <img src="img/background/map-marker.png" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"/>
           </div>

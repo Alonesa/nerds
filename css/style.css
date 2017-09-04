@@ -1,7 +1,6 @@
 body {
   padding: 0;
   margin: 0;
-  min-width: 1200px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -23,7 +22,12 @@ body {
 
 /*Текстовые параметры*/
 
-h2.company-principles,
+h2.company-principles {
+  font-size: 45px;
+  line-height: 45px;
+  color: #000000;
+}
+
 h2.modal-title {
   font-size: 45px;
   font-weight: 500;
@@ -356,11 +360,11 @@ input[type="radio"].visually-hidden {
   padding: 0;
   padding-top: 31px;
   min-height: 400px;
-  margin-bottom: 42px;
+  margin-bottom: 48px;
 }
 
 .company-info-left {
-  width: 652px;
+  width: 682px;
   min-height: 400px;
 }
 
@@ -372,7 +376,13 @@ input[type="radio"].visually-hidden {
 .dev-description {
   padding: 0;
   margin: 0;
-  margin: 29px 0 41px 17px;
+  margin: 40px 0 24px;
+}
+
+.description-right {
+  padding: 0;
+  margin: 0;
+  margin: 30px 0 40px 17px;
 }
 
 .company-info-left ul {
@@ -572,6 +582,7 @@ hr {
 
 /*Модальное окно*/
 .modal {
+  display: none;
   width: 760px;
 	height: 456px;
   padding: 66px 100px;
@@ -603,7 +614,7 @@ hr {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 38px;
+  margin-top: 41px;
 }
 
 .feedback-form-group {
@@ -622,28 +633,30 @@ hr {
 .feedback-form input[type="text"] {
   font: inherit;
   background-color: #ffffff;
-  height: 44px;
-  width: 343px;
+  height: 50px;
+  width: 360px;
   border: 2px solid #d7dcde;
   padding-left: 13px;
   border-radius: 3px;
   line-height: 18px;
   font-size: : 16px;
   color: #d7dcde;
-  margin-top: 6px;
+  margin-top: 9px;
+  box-sizing: border-box;
 }
 
 .feedback-form textarea {
-  width: 730px;
-  height: 88px;
+  width: 760px;
+  height: 118px;
   padding: 13px;
   border: 2px solid #d7dcde;
   color: #d7dcde;
-  margin-top: 6px;
+  margin-top: 9px;
+  box-sizing: border-box;
 }
 
 .message-form {
-  margin-top: 31px;
+  margin-top: 34px;
 }
 
 .feedback-form input[type="text"]:hover,
@@ -668,7 +681,8 @@ hr {
   width: 260px;
   height: 50px;
   margin-right: 200px;
-  margin-top: 40px;
+  margin-top: 43px;
+  border-radius: 3px;
 	background-color: #fb565a;
   font: inherit;
   text-transform: uppercase;
@@ -678,13 +692,13 @@ hr {
 }
 
 .modal-close {
-  width: 24px;
-  height: 24px;
   position: absolute;
-  top: 66px;
-  right: 99px;
+  top: 58px;
+  right: 91px;
   border: none;
   background-color: #ffffff;
+  width: 40px;
+  height: 40px;
 }
 
 .modal-close::after {
@@ -693,8 +707,8 @@ hr {
   background-image: url("../img/decorative/close-cross.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
 }
 
 /*Футер*/
