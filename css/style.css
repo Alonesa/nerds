@@ -253,7 +253,7 @@ input[type="radio"].visually-hidden {
   z-index: 1000;
 }
 
-.container input[type=radio] {
+.container>input[type=radio] {
   position:absolute;
   opacity:0;
 }
@@ -446,7 +446,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   padding-top: 31px;
   min-height: 400px;
-  margin-bottom: 48px;
+  margin-bottom: 49px;
 }
 
 .company-info-left {
@@ -462,7 +462,7 @@ input[type="radio"].visually-hidden {
 .dev-description {
   padding: 0;
   margin: 0;
-  margin: 40px 0 24px;
+  margin: 39px 0 24px;
 }
 
 .description-right {
@@ -491,7 +491,7 @@ input[type="radio"].visually-hidden {
   border: 1px solid #fb565a;
   width: 23px;
   left: 1px;
-  bottom: 12px;
+  bottom: 11px;
   padding: auto 0;
 }
 
@@ -900,7 +900,7 @@ hr {
   color: #000000;
   text-align: center;
   margin: 0 auto;
-  padding-top: 61px;
+  padding-top: 77px;
 }
 
 .catalog-columns {
@@ -930,21 +930,29 @@ hr {
   width: 134px;
   padding: 0;
   margin: 0;
-  padding-top: 10px;
+  padding-top: 8px;
 }
 
 .sorting-options {
   width: 360px;
   padding: 0;
   margin: 0;
-  padding-top: 5px;
+  padding-top: 6px;
   list-style: none;
   display: flex;
-  justify-content: space-between;
 }
 
-.name {
-  padding-right: 8px;
+.sorting-options li:nth-child(-n+2) {
+  padding-right: 26px;
+}
+
+.sorting-options li:nth-child(3) {
+  padding-right: 47px;
+}
+
+.sorting-options li:nth-child(4) {
+  margin-right: 16px;
+  padding-top: 11px;
 }
 
 .arrow {
@@ -957,12 +965,28 @@ hr {
   background-image: url(../img/decorative/icon-down-dir.svg);
   background-repeat: no-repeat;
   background-position: center center;
+  opacity: 0.3;
+}
+
+.arrow-down-set {
+  opacity: 1;
 }
 
 .arrow-up {
   background-image: url(../img/decorative/icon-up-dir.svg);
   background-repeat: no-repeat;
   background-position: center center;
+  opacity: 0.3;
+}
+
+.arrow-up:hover,
+.arrow-down:hover {
+  opacity: 0.6;
+}
+
+.arrow-up:active,
+.arrow-down:active {
+  opacity: 1;
 }
 
 .catalog {
@@ -1004,12 +1028,16 @@ fieldset {
   margin: 0;
 }
 
+fieldset:nth-child(1) legend {
+  letter-spacing: 1px;
+}
+
 .filter {
   padding: 0;
   margin: 0;
   padding: 25px;
   padding-left: 0;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   width: 260px;
   background-color: #ffffff;
 }
@@ -1097,6 +1125,80 @@ fieldset {
 .filter-parametr:disabled + label {
   color: #283136;
   opacity: 0.3;
+}
+
+input[type="radio"]:disabled  {
+  opacity: 0;
+}
+
+fieldset ul {
+  padding: 0;
+  margin: 0;
+  margin-top: 14px;
+}
+
+fieldset:nth-child(3) {
+  margin-top: 27px;
+  margin-bottom: 31px;
+}
+
+
+.filter-radio label {
+  position: relative;
+}
+
+.rubers label:hover::before,
+.rubers input[type="radio"]:checked + label:hover::before,
+.specials label:hover::before,
+.specials input[type="checkbox"]:checked + label:hover::before
+ {
+  opacity: 1;
+}
+
+
+.rubers input[type="radio"]:checked + label::before {
+  background-image: url("../img/decorative/radio-on.svg");
+  background-repeat: no-repeat;
+  opacity: 0.6;
+}
+
+.rubers label::before {
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: -2px;
+  width: 28px;
+  height: 28px;
+  background-image: url("../img/decorative/radio-off.svg");
+  background-repeat: no-repeat;
+  opacity: 0.6;
+}
+
+.filter-checkbox label {
+  position: relative;
+}
+
+.specials input[type="checkbox"]:checked + label::before {
+  background-image: url("../img/decorative/checkbox-on.svg");
+  background-repeat: no-repeat;
+  opacity: 0.6;
+}
+
+.specials label::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: -2px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/decorative/checkbox-off.svg");
+  background-repeat: no-repeat;
+  opacity: 0.6;
+}
+
+.filter-option {
+  margin-bottom: 16px;
+  padding-left: 36px;
 }
 
 .button-gray {
