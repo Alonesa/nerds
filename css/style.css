@@ -475,13 +475,24 @@ input[type="radio"].visually-hidden {
   padding: 0;
   margin: 0;
   margin-top: 16px;
-  padding-left: 36px;
 }
 
 .dev-services {
   padding: 0;
   margin: 0;
+  padding-left: 36px;
   margin-bottom: 24px;
+  position: relative;
+}
+
+.dev-services::before {
+  position: absolute;
+  content: "";
+  border: 1px solid #fb565a;
+  width: 23px;
+  left: 1px;
+  bottom: 12px;
+  padding: auto 0;
 }
 
 .company-info-right {
