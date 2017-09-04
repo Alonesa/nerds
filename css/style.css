@@ -39,7 +39,6 @@ h2.slide-info {
   font-size: 55px;
   line-height: 55px;
   color: #000000;
-
 }
 
 h3.section-title {
@@ -678,6 +677,7 @@ hr {
 }
 
 /*Модальное окно*/
+
 .modal {
   display: none;
   width: 760px;
@@ -806,6 +806,15 @@ hr {
   background-position: 0 0;
   width: 40px;
   height: 40px;
+  opacity: 0.3;
+}
+
+.modal-close:hover::after {
+  opacity: 1;
+}
+
+.modal-close:active::after {
+  opacity: 0.6;
 }
 
 /*Футер*/
@@ -1127,7 +1136,7 @@ fieldset:nth-child(1) legend {
   opacity: 0.3;
 }
 
-input[type="radio"]:disabled  {
+input[type="radio"]:disabled {
   opacity: 0;
 }
 
@@ -1142,7 +1151,6 @@ fieldset:nth-child(3) {
   margin-bottom: 31px;
 }
 
-
 .filter-radio label {
   position: relative;
 }
@@ -1150,11 +1158,9 @@ fieldset:nth-child(3) {
 .rubers label:hover::before,
 .rubers input[type="radio"]:checked + label:hover::before,
 .specials label:hover::before,
-.specials input[type="checkbox"]:checked + label:hover::before
- {
+.specials input[type="checkbox"]:checked + label:hover::before {
   opacity: 1;
 }
-
 
 .rubers input[type="radio"]:checked + label::before {
   background-image: url("../img/decorative/radio-on.svg");
