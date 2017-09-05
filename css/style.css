@@ -241,6 +241,11 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
+.container input[type=radio] {
+  position:absolute;
+  opacity:0;
+}
+
 .slider-controlls {
   position: absolute;
   bottom: 90px;
@@ -252,11 +257,6 @@ input[type="radio"].visually-hidden {
   z-index: 1000;
 }
 
-.container>input[type=radio] {
-  position:absolute;
-  opacity:0;
-}
-
 .slider-controlls label {
   display: inline-block;
   width: 10px;
@@ -264,6 +264,7 @@ input[type="radio"].visually-hidden {
   margin: 0 7px;
   background-color: #ffffff;
   border: 4px solid #ffffff;
+  vertical-align: top;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -274,7 +275,7 @@ input[type="radio"].visually-hidden {
   background: #cccccc;
 }
 
-.promo-sliders ul {
+ul.slides {
   padding: 0;
   margin: 0;
 }
@@ -346,12 +347,10 @@ input[type="radio"].visually-hidden {
   background-position: 100% 93%;
 }
 
+/*Управение слайдером*/
+
 .slide {
   display: none;
-}
-
-.slide:nth-child(1) {
-  display:block;
 }
 
 #slider-controlls-design:checked ~ .slides .slide:nth-child(1) {
@@ -403,6 +402,14 @@ input[type="radio"].visually-hidden {
   padding: 0;
   margin: 0;
   margin-top: 18px;
+  text-align: left;
+}
+
+.paragraph-promo-features {
+  margin-top:16px;
+  margin-bottom: 32px;
+  width: 260px;
+  text-align: left;
 }
 
 .feature-button {
@@ -516,14 +523,13 @@ th {
 	font-size: 45px;
 	font-weight: 700;
 	line-height: 45px;
+  width: 120px;
   padding: 0;
   margin: 0;
 }
 
 th:nth-child(2),
 td:nth-child(2) {
-  padding-left: 10px;
-  padding-right: 8px;
 }
 
 td {
@@ -646,11 +652,6 @@ hr {
   padding: 0;
   padding-left: 50px;
   margin-top: 54px;
-}
-
-.paragraph-promo-features {
-  margin-top:16px;
-  margin-bottom: 32px;
 }
 
 .contact-info h3 {
@@ -1288,11 +1289,12 @@ fieldset:nth-child(3) {
 }
 
 .product-info {
-  width: 180px;
+  max-width: 240px;
+  height: 32px;
 	font: inherit;
 	font-size: 16px;
 	font-weight: 400;
-	line-height: 14px;
+	line-height: 18px;
   color: #666666;
 }
 
@@ -1310,6 +1312,16 @@ fieldset:nth-child(3) {
   text-align: center;
   vertical-align: middle;
   padding: 0 auto;
+}
+
+.info-block {
+  width: 240px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.product-hover .info-block {
+  margin: auto;
 }
 
 .product-description:hover > .product-hover {
