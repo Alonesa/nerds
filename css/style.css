@@ -870,24 +870,18 @@ hr {
 	min-height: 78px;
   border-radius: 50%;
 	background-color: #e1e1e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.button-vk {
-  background-image: url(../img/decorative/vk-icon.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
+.social-button:active {
+  background-color: #d7373b;
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
-.button-fb {
-  background-image: url(../img/decorative/fb-icon.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.button-insta {
-  background-image: url(../img/decorative/insta-icon.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
+.social-button:active path {
+  fill: #e37376;
 }
 
 .deal {
