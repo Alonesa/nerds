@@ -127,22 +127,22 @@
                   <div class="info-block">
                     <h3 class="product">Sedona</h3>
                     <p class="product-info">Информационный сайт<br />для туристов</p>
-                    <a class="button button-red button-buy" href="#">9 900 Руб.</a>
                   </div>
+                  <a class="button button-red button-buy" href="#">9 900 Руб.</a>
                 </div>
               </div>
             </li>
             <li class="item">
               <div class="product-description">
-              <a class="product-page" href="#">
-              <img src="img/content/img-pink.jpg" width="360" height="576" alt="Pink">
-              </a>
-              <div class="product-hover">
-                <div class="info-block">
-                  <h3 class="product">Pink APP</h3>
-                  <p class="product-info">Продуктовый лендинг приложения для iOS и Android</p>
-                  <a class="button button-red button-buy" href="#">9 900 Руб.</a>
-                </div>
+                <a class="product-page" href="#">
+                <img src="img/content/img-pink.jpg" width="360" height="576" alt="Pink">
+                </a>
+                <div class="product-hover">
+                  <div class="info-block">
+                    <h3 class="product">Pink APP</h3>
+                    <p class="product-info">Продуктовый лендинг приложения для iOS и Android</p>
+                 </div>
+                <a class="button button-red button-buy" href="#">9 900 Руб.</a>
               </div>
             </div>
             </li>
@@ -155,8 +155,8 @@
                   <div class="info-block">
                     <h3 class="product">Barbershop</h3>
                     <p class="product-info">Сайт салона красоты.<br />Для мужчин, да.</p>
-                    <a class="button button-red button-buy" href="#">9 900 Руб.</a>
                   </div>
+                  <a class="button button-red button-buy" href="#">9 900 Руб.</a>
                 </div>
               </div>
             </li>
@@ -169,8 +169,8 @@
                   <div class="info-block">
                     <h3 class="product">Mishka</h3>
                     <p class="product-info">Интернет-магазин<br />вязаных игрушек</p>
-                    <a class="button button-red button-buy" href="#">9 900 Руб.</a>
                   </div>
+                  <a class="button button-red button-buy" href="#">9 900 Руб.</a>
                 </div>
               </div>
             <li class="item">
@@ -182,8 +182,8 @@
                   <div class="info-block">
                     <h3 class="product">A Plus</h3>
                     <p class="product-info">Лендинг курсов повышения квалификации</p>
-                    <a class="button button-red button-buy" href="#">9 900 Руб.</a>
                   </div>
+                  <a class="button button-red button-buy" href="#">9 900 Руб.</a>
                 </div>
               </div>
             </li>
@@ -196,8 +196,8 @@
                   <div class="info-block">
                     <h3 class="product">Кваст</h3>
                     <p class="product-info">Промо-сайт производителя крафтового кваса</p>
-                    <a class="button button-red button-buy" href="#">9 900 Руб.</a>
                   </div>
+                  <a class="button button-red button-buy" href="#">9 900 Руб.</a>
                 </div>
               </div>
             </li>
@@ -229,15 +229,15 @@
               <form class="feedback-form" action="/send.php" method="post">
                 <div class="feedback-form-group">
                   <label for="fullname">Ваше имя:</label>
-                  <input type="text" name="fullname" id="fullname" placeholder="Представьтесь, пожалуйста">
+                  <input type="text" name="fullname" id="fullname" placeholder="Представьтесь, пожалуйста"  pattern="[A-Za-zА-Яа-яЁё]{3,}" required>
                 </div>
                 <div class="feedback-form-group">
                   <label for="email">Ваш e-mail:</label>
-                  <input type="text" name="email" id="email" placeholder="Для отправки ответа">
+                  <input type="email" name="email" id="email" placeholder="Для отправки ответа" required>
                 </div>
                 <div class="feedback-form-group message-form">
                   <label for="message">Текст письма:</label>
-                  <textarea name="message" id="message" rows="5" cols="50" placeholder="В свободной форме"></textarea>
+                  <textarea name="message" id="message" placeholder="В свободной форме" pattern="^[А-Яа-яЁё\s]+$" ></textarea>
                 </div>
                 <input type="submit" class="btn button-red modal-send" value="Отправить">
                 <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
