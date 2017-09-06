@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+    <meta name="keywords" content="HTML Academy: Нёрдс">
+    <meta name="description" content="HTML Academy: Нёрдс">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  </head>
+<body class="modal-window">
+<section class="container modal modal-contact-us">
+  <h2 class="modal-title">Напишите нам</h2>
+  <form class="feedback-form" action="/send.php" method="post">
+    <div class="feedback-form-group">
+      <label for="fullname">Ваше имя:</label>
+      <input type="text" name="fullname" id="fullname" placeholder="Представьтесь, пожалуйста"  pattern="[A-Za-zА-Яа-яЁё]{3,}" required>
+    </div>
+    <div class="feedback-form-group">
+      <label for="email">Ваш e-mail:</label>
+      <input type="email" name="email" id="email" placeholder="Для отправки ответа" required>
+    </div>
+    <div class="feedback-form-group message-form">
+      <label for="message">Текст письма:</label>
+      <textarea name="message" id="message" placeholder="В свободной форме" pattern="^[А-Яа-яЁё\s]+$" ></textarea>
+    </div>
+    <input type="submit" class="btn button-red modal-send" value="Отправить">
+    <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+  </form>
+</section>
+</body>
+</html>
