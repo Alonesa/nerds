@@ -306,14 +306,15 @@ ul.slides {
   text-align: center;
   display: inline-block;
   vertical-align: top;
+  word-break: break-all;
   color: #ffffff;
   border-radius: 3px;
-  padding: 13px 0;
+  padding: 13px;
   margin-bottom: 80px;
 }
 
 .slider-button {
-  width: 240px;
+  width: 214px;
 	background-color: #fb565a;
   margin-top: 23px;
 }
@@ -416,7 +417,7 @@ ul.slides {
 }
 
 .feature-button {
-  width: 160px;
+  width: 134px;
   margin: 0;
 }
 
@@ -694,11 +695,11 @@ hr {
 
 .write-us-button {
 	background-color: #fb565a;
-  width: 219px;
+  width: 187px;
   position: relative;
   margin-top: 37px;
   margin-bottom: 15px;
-  padding: 16px 0;
+  padding: 16px;
 }
 
 .map-marker {
@@ -1281,7 +1282,7 @@ fieldset:nth-child(3) {
   color: #000000;
   background-color: #eeeeee;
   border-radius: 3px;
-  padding: 15px 0;
+  padding: 15px;
 }
 
 .button-gray:hover {
@@ -1425,7 +1426,7 @@ fieldset:nth-child(3) {
 .button-buy {
 	background-color: #fb565a;
   margin: 0;
-  width: 200px;
+  width: 174px;
   margin-top: 29px;
   margin-bottom: 42px;
 }
