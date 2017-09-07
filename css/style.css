@@ -709,6 +709,46 @@ hr {
 
 /*Модальное окно*/
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-300px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal {
   display: none;
   width: 760px;
@@ -716,6 +756,15 @@ hr {
   padding: 66px 100px;
 	box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
   background-color: #ffffff;
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal-contact-us {
@@ -768,7 +817,7 @@ hr {
   padding-left: 13px;
   border-radius: 3px;
   line-height: 18px;
-  font-size: : 16px;
+  font-size: 16px;
   color: #d7dcde;
   margin-top: 9px;
   box-sizing: border-box;
