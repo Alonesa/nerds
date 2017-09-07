@@ -1,4 +1,3 @@
-
   var link = document.querySelector(".write-us-button");
   var popup = document.querySelector(".modal-contact-us");
   var close = popup.querySelector(".modal-close");
