@@ -262,8 +262,8 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-container input[type=radio] {
-  position:absolute;
-  opacity:0;
+  position: absolute;
+  opacity: 0;
 }
 
 .slider-controlls {
@@ -316,6 +316,15 @@ ul.slides {
 
 .slide-info {
   margin-bottom: 26px;
+}
+
+.paragraph-promo-slider {
+  width: 432px;
+	font: inherit;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+  color: #283136;
 }
 
 .button {
@@ -712,7 +721,7 @@ hr {
 
 .contact-info {
   height: 308px;
-  width: 269px;
+  width: 219px;
   font: inherit;
 	font-size: 16px;
 	font-weight: 400;
@@ -720,7 +729,7 @@ hr {
   color: #666666;
   background-color: #ffffff;
   padding: 0;
-  padding-left: 50px;
+  padding: 0 50px;
   margin-top: 54px;
 }
 
@@ -731,12 +740,22 @@ hr {
 .contacts-block {
   margin: 23px 0 18px;
 }
+.contacts-phone-number a {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font: inherit;
+  font-size: 16px;
+	font-weight: 400;
+	line-height: 18px;
+  color: #666666;
+}
 
 .write-us-button {
 	background-color: #fb565a;
   width: 187px;
   position: relative;
-  margin-top: 37px;
+  margin-top: 21px;
   margin-bottom: 15px;
   padding: 16px;
 }
