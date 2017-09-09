@@ -1545,13 +1545,13 @@ hr {
 }
 
 .product-info {
-  max-width: 240px;
+  max-width: 230px;
 	font: inherit;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 18px;
   color: #666666;
-  margin: 0;
+  margin: 0 auto;
   margin-top: 16px;
 }
 
@@ -1569,7 +1569,7 @@ hr {
   bottom: 7px;
   text-align: center;
   vertical-align: middle;
-  padding: 0 auto;
+  margin: 0 auto;
 }
 
 .info-block {
