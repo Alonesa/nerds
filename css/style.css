@@ -134,15 +134,15 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
+.site-navigation a:hover,
+.user-buttons a:hover {
+	color: #fb565a;
+}
+
 .site-navigation a:active,
 .user-buttons a:active {
   opacity: 0.3;
   color: #000000;
-}
-
-.site-navigation a:hover,
-.user-buttons a:hover {
-	color: #fb565a;
 }
 
 .site-navigation a.current {

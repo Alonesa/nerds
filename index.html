@@ -6,7 +6,7 @@
     <meta name="keywords" content="HTML Academy: Нёрдс">
     <meta name="description" content="HTML Academy: Нёрдс">
     <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
-    <link rel="stylesheet" type="text/css" href="css/style-min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
@@ -20,13 +20,13 @@
             <img class="logo" src="img/content/nerds-logo.svg" width="160" height="65" alt="Логотип студии «Нердс»"/>
             </a>
             <ul class="site-navigation">
-              <li><a class="current" href="#">Студия</a></li>
+              <li><a href="#">Студия</a></li>
               <li><a href="#">Клиенты</a></li>
               <li><a href="catalog.html">Магазин</a></li>
-              <li><a  href="#">Контакты</a></li>
+              <li><a href="#">Контакты</a></li>
             </ul>
             <ul class="user-buttons">
-              <li><a class="cart" href="cart">Корзинa</a></li>
+              <li class="cart"><a href="cart">Корзинa</a></li>
             </ul>
           </div>
         </div>
@@ -183,11 +183,11 @@
               <form class="feedback-form" action="/send.php" method="post">
                 <div class="feedback-form-group">
                   <label for="fullname">Ваше имя:</label>
-                  <input type="text" name="fullname" id="fullname" placeholder="Представьтесь, пожалуйста"  pattern="[A-Za-zА-Яа-яЁё]{3,}" required>
+                  <input type="text" name="fullname" id="fullname" placeholder="Представьтесь, пожалуйста" pattern="[A-Za-zА-Яа-яЁё]{3,}">
                 </div>
                 <div class="feedback-form-group">
                   <label for="email">Ваш e-mail:</label>
-                  <input type="email" name="email" id="email" placeholder="Для отправки ответа" required>
+                  <input type="email" name="email" id="email" placeholder="Для отправки ответа">
                 </div>
                 <div class="feedback-form-group message-form">
                   <label for="message">Текст письма:</label>
