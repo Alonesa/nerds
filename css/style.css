@@ -190,7 +190,7 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation {
-  width: 490px;
+  width: 486px;
   margin-right: 80px;
   list-style: none;
   display: -webkit-box;
@@ -201,10 +201,12 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation a {
+  max-width: 100px;
   color: #000000;
   display: block;
   vertical-align: middle;
-  padding: 26px 19px 10px 26px;
+  padding: 26px 0 10px;
+  margin: 0 23px;
 }
 
 .user-buttons a {
